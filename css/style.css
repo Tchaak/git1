@@ -3,8 +3,8 @@
 @import 'reset';*/
 /* Magnific Popup CSS */
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,100);
-@import url(http://fonts.googleapis.com/css?family=Lobster+Two);
 @import url(http://fonts.googleapis.com/css?family=Allura);
+@import url(http://fonts.googleapis.com/css?family=Niconne);
 .mfp-bg {
   top: 0;
   left: 0;
@@ -577,7 +577,7 @@ a {
 }
 
 h1 {
-  font-family: 'Lobster Two', 'Lato', Calibri, Arial, sans-serif;
+  font-family: 'Niconne', 'Lato', Calibri, Arial, sans-serif;
   font-weight: 300;
   font-size: 5em;
   text-align: center;
@@ -593,7 +593,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Lobster Two', 'Lato', Calibri, Arial, sans-serif;
+  font-family: 'Niconne', 'Lato', Calibri, Arial, sans-serif;
   font-weight: 300;
   font-size: 1.8em;
   text-align: left;
@@ -644,7 +644,7 @@ header {
 }
 
 header h1 {
-  font-family: 'Lobster Two', 'Lato', Calibri, Arial, sans-serif;
+  font-family: 'Niconne', 'Lato', Calibri, Arial, sans-serif;
   font-weight: 300;
   margin: 0;
 }
@@ -814,7 +814,7 @@ header.headermobile button {
 
 #main .home h1 {
   font-size: 5em;
-  font-family: 'Lobster Two', 'Lato', Calibri, Arial, sans-serif;
+  font-family: 'Niconne', 'Lato', Calibri, Arial, sans-serif;
   display: block;
   width: 100%;
   padding-top: 245px;
@@ -1155,7 +1155,7 @@ header.headermobile button {
 }
 
 #team li figcaption.member span.name {
-  font-family: 'Lobster Two', 'Lato', Calibri, Arial, sans-serif;
+  font-family: 'Niconne', 'Lato', Calibri, Arial, sans-serif;
   font-size: 1.3em;
   line-height: 30px;
 }
@@ -1187,7 +1187,7 @@ header.headermobile button {
 }
 
 #contact-form button[type="submit"] {
-  font-family: 'Lobster Two', 'Lato', Calibri, Arial, sans-serif;
+  font-family: 'Niconne', 'Lato', Calibri, Arial, sans-serif;
   font-size: 1.5em;
   cursor: pointer;
   width: 100%;
@@ -1547,7 +1547,9 @@ header.headermobile button {
 }
 
 .h1Display {
-  display: none;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
 }
 
 .quote {
