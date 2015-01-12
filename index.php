@@ -78,13 +78,13 @@
                     <p>Quant à moi, j’espère ravir vos papilles . Mes origines anglaises ajouteront sans nul doute au dépaysement souvent recherché.</p>
             </section>
 <!--CHAMBRE INTRO-->
-            <section id="section2" class="portfolio">
+            <section id="section2" class="about">
                 <h1>Chambres</h1>
                 <hr />
 
 <!--GALERIE-->
                 <h2>Galerie</h2>
-
+<div class="portfolio">
                 <nav class="filter" id="filter" data-option-key="filter">
                     <a data-filter=".tous" class="current" >Tous</a> | 
                     <a data-filter=".alimentation">Rez de chaussée</a> | 
@@ -173,14 +173,19 @@
                             </figcaption>
                         </figure>
                     </li>
-                </ul>
-                <?php
+                </ul></div>
+                <?php echo
         '<ul>
-            <li><a href="?id=k1">Chambre K1</a>,
-            <li><a href="?id=k2">Chambre K2</a>,
-            <li><a href="?id=k3">Chambre K3</a>,
-            <li><a href="?id=k4">Chambre K4</a>
-        </ul>'
+            <li><a href="?id=k1#k1">Chambre K1</a>,
+            <li><a href="?id=k2#k2">Chambre K2</a>,
+            <li><a href="?id=k1#k1">Chambre K3</a>,
+            <li><a href="?id=k2#k2">Chambre K4</a>,
+            <li><a href="?id=k1#k1">Chambre K5</a>,
+            <li><a href="?id=k2#k2">Chambre K6</a>,
+            <li><a href="?id=k1#k1">Chambre K7</a>,
+            <li><a href="?id=k2#k2">Chambre K8</a>,
+
+        </ul>';
 
 //==========================================================      
 //~~~~=__________Affichage quand pas id__________=~~~~//
@@ -194,29 +199,23 @@
 //==========================================================   
              elseif ($_GET['id']=='k1')
              
-                  { //echo'home ici';
-                  require 'includes/k1.php';
+                { //echo'';
+                  require 'k1.php';
                   }
 //==========================================================      
 //~~~~=__________Affichage K2__________=~~~~//
 //==========================================================   
              elseif ($_GET['id']=='k2')
              
-                  { //echo'products ici';
-                  require 'includes/k2.php';
+                { //echo'';
+                  require 'k2.php';
                   }
 
 
 
 ?>
-<a href="">chambre K2</a>
-                    <h2>Chambre k1</h2>
-                        <span class="detChambre">Ambiance cosy et couleurs naturelles</span>
-                        <p>Équipée d’un grand lit et d’une couette en plumes d’oies, cette chambre vous accueillera douillettement pendant votre séjour.</p><br /><img src="img/illu.png" height="92" width="167" alt="illu">
-<br />
-                        <p>La salle de bain lumineuse avec une grande douche à l'italienne (accessible aux personnes à mobilité réduite) ainsi qu'une baignoire.</p><br /><img src="img/illu.png" height="92" width="167" alt="illu">
-<br />
-                        <p>Située au rez-de-chaussée avec terrasse privative ombragée donnant sur la grande cour.</p>
+
+
 
             </section>
 <!--SERVICES-->
