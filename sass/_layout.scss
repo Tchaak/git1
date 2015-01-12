@@ -9,7 +9,7 @@
         $INDEX6 - HEADER MOBILE
         $INDEX7 - MAIN CONTENT
         $INDEX8 - PORTFOLIO
-        $INDEX9 - THE TEAM
+        $INDEX9 - LISTE
         $INDEX10 - CONTACT
         $INDEX11 - MEDIA QUERIES : TABLETS
         $INDEX12 - MEDIA QUERIES : SMARTPHONES
@@ -34,7 +34,7 @@
     #F0F0F0
     #rgba(30, 30, 30, 0.6)
     #222222
-
+    #bdbbb0 beige clair
 */
 
 
@@ -50,7 +50,7 @@
 
 
 body {
-    color: #F6F6F6;
+    color: #353535;
 }
 
 
@@ -69,7 +69,7 @@ header{
 }
 
 a{
-    color: #fff;
+    color: #353535;
 }
 
 a:hover {
@@ -77,12 +77,12 @@ a:hover {
 }
 
 h1, h2, h3{
-    color: #F6F6F6;
-    border-color: #F6F6F6;
+    color: #353535;
+    border-color: #353535;
 }
 
 hr{
-    border-color: #F6F6F6;
+    border-color: #d93612;
 }
 
 
@@ -116,13 +116,18 @@ nav a.current, nav a:hover{
 
 
  
-.headerstandard.headerstandard-shrink h1 {
+.headerstandard.headerstandard-shrink {
+
+h1 {
     background: transparent url('../img/icone.png') center left no-repeat;
-    text-indent: 60px;
+    text-indent: 40px;
+}
+.spanDisplay {display: none;}
 }
 
 .logoHeader {
-    font-family: 'Allura', Calibri, Arial, sans-serif;
+    font-family:'Great Vibes', Arial, sans-serif;
+    color: #ffffff;
 }
 
 
@@ -151,11 +156,13 @@ header.headermobile button {
 ******************************************************/ 
 
 
-.section1-visible{ background: #9ab0b5; }
-.section2-visible{ background: #6C4846; }
-.section3-visible{ background: #703C3C; }
-.section4-visible{ background: #704935; }
-.section5-visible{ background: #5E3631; }
+.section1-visible{ background: #bdbbb0; }
+.section2-visible{ background: #8a897c; }
+.section3-visible{ background: #bdbbb0; }
+.section4-visible{ background: #8a897c; }
+.section5-visible{ background: #bdbbb0; }
+.section6-visible{ background: #d2d7df; }
+.section7-visible{ background: #bdbbb0; }
 
 
 #main .home h1{
@@ -225,7 +232,7 @@ header.headermobile button {
 
 /******************************************************
 
-    $INDEX9 - THE TEAM
+    $INDEX9 - LISTE
     
 ******************************************************/ 
 
@@ -267,21 +274,24 @@ header.headermobile button {
 
 
 
-#contact-form input[type="text"],
-#contact-form input[type="email"],
-#contact-form input[type="tel"],
-#contact-form input[type="url"],
-#contact-form textarea {
+#contact-form input,#contact-form2 input[type="text"],
+#contact-form input,#contact-form2 input[type="email"],
+#contact-form input,#contact-form2 input[type="tel"],
+#contact-form input,#contact-form2 input[type="url"],
+#contact-form input,#contact-form2 input[type="date"],
+#contact-form textarea,
+#contact-form2 textarea,
+#contact-form select{
     background:#FFF;
     box-shadow:inset 0 1px 2px #F6F6F6, 0 1px 0 #FFF;
     -webkit-box-shadow:inset 0 1px 2px #F6F6F6, 0 1px 0 #FFF;
     -moz-box-shadow:inset 0 1px 2px #F6F6F6, 0 1px 0 #FFF;
 }
-#contact-form button[type="submit"] {
+#contact-form button,#contact2-form button[type="submit"] {
     background:#382f2f;
     color:#F6F6F6;
 }
-#contact-form button[type="submit"]:hover {
+#contact-form button, #contact-form2 button[type="submit"]:hover {
     background:#F6F6F6;
     color:#E46C51;
 }

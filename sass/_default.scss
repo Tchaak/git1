@@ -9,7 +9,7 @@
         $INDEX6 - HEADER MOBILE
         $INDEX7 - MAIN CONTENT
         $INDEX8 - PORTFOLIO
-        $INDEX9 - THE TEAM
+        $INDEX9 - LISTE
         $INDEX10 - CONTACT
         $INDEX11 - MEDIA QUERIES : TABLETS
         $INDEX12 - MEDIA QUERIES : SMARTPHONES
@@ -29,9 +29,7 @@
 
 
 
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,100);
-@import url(http://fonts.googleapis.com/css?family=Allura);
-@import url(http://fonts.googleapis.com/css?family=Niconne);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400|Niconne|Great+Vibes);
 
 body, html { font-size: 100%;   padding: 0; margin: 0;}
 
@@ -184,7 +182,6 @@ header h1, header nav a {
     -moz-transition: all 0.2s;
     transition: all 0.2s;   
 }
-
 
 
 
@@ -417,12 +414,12 @@ html, body,
     padding-top: 245px;
     line-height: 0.8em;
     height: 450px;
-    margin: 20px auto;
+    //margin: 20px auto;
     background: transparent url('../img/logo.png') center center no-repeat;
 }
 
 #main .home h2{
-    margin-top: -140px;
+    //margin-top: -140px;
     font-family: 'Lato', Calibri, Arial, sans-serif;
     font-size: 3em;
 }
@@ -806,11 +803,11 @@ html, body,
 
 
 
-#contact-form input[type="text"],
-#contact-form input[type="email"],
-#contact-form input[type="tel"],
-#contact-form input[type="url"],
-#contact-form textarea {
+#contact-form input,#contact-form2 input[type="text"],
+#contact-form input,#contact-form2 input[type="email"],
+#contact-form input,#contact-form2 input[type="tel"],
+#contact-form input,#contact-form2 input[type="url"],
+#contact-form textarea,#contact-form2 textarea{
     font-family: 'Lato', Calibri, Arial, sans-serif;
     width:100%;
     border: 0px;
@@ -821,7 +818,7 @@ html, body,
         -moz-border-radius:3px;
         -webkit-border-radius:3px;
 }
-#contact-form button[type="submit"] {
+#contact-form button,#contact-form2 input[type="submit"] {
     font-family: 'Niconne', 'Lato', Calibri, Arial, sans-serif;
     font-size: 1.5em;
     cursor:pointer;
@@ -831,7 +828,7 @@ html, body,
     padding:10px;
     border-radius:5px;
 }
-#contact-form button[type="submit"]:hover {}
+#contact-form button,#contact-form2 input[type="submit"]:hover {}
 
 
 
