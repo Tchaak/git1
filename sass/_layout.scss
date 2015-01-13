@@ -224,8 +224,11 @@ header.headermobile button {
     
 ******************************************************/ 
 .chambres {
+        //margin-top: 350px;
+
     .navChambre{
         text-align: center;
+
     }
     li{
 display: inline-block;
@@ -233,7 +236,9 @@ display: inline-block;
 
 }
 
-
+.ancre {
+    padding-top: 350px;
+}
 /******************************************************
 
     $INDEX8 - PORTFOLIO

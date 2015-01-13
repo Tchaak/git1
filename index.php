@@ -106,7 +106,7 @@
                     </li>
                     <li class="tous alimentation">
                         <figure>
-                            <img src="img/galerie/bedroomk2medium.jpg" height="155" width="270"  alt="chambre 1">
+                            <img src="img/galerie/bedroomk2medium.jpg" height="180" width="270"  alt="chambre 1">
                             <figcaption>
                                 <h3>Chambre k2</h3>
                                 <span>Rez-de-chaussée</span>
@@ -116,7 +116,7 @@
                     </li>
                     <li class="tous alimentation">
                         <figure>
-                            <img src="img/galerie/bedroomk3medium.jpg" height="142" width="270" alt="chambre 1">
+                            <img src="img/galerie/bedroomk3medium.jpg" height="180" width="270" alt="chambre 1">
                             <figcaption>
                                 <h3>Chambre k3</h3>
                                 <span>Rez-de-chaussée</span>
@@ -126,7 +126,7 @@
                     </li>
                     <li class="tous alimentation">
                         <figure>
-                            <img src="img/galerie/bedroomk4medium.jpg" height="192" width="270" alt="chambre 1">
+                            <img src="img/galerie/bedroomk4medium.jpg" height="180" width="270" alt="chambre 1">
                             <figcaption>
                                 <h3>Chambre k4</h3>
                                 <span>Rez-de-chaussée</span>
@@ -146,7 +146,7 @@
                     </li>
                     <li class="tous automoto">
                         <figure>
-                            <img src="img/galerie/bedroomk6medium.jpg" height="191" width="270" alt="chambre 1">
+                            <img src="img/galerie/bedroomk6medium.jpg" height="180" width="270" alt="chambre 1">
                             <figcaption>
                                 <h3>Chambre k6</h3>
                                 <span>Premier étage</span>
@@ -156,7 +156,7 @@
                     </li>
                     <li class="tous beaute">
                         <figure>
-                            <img src="img/galerie/bedroomk7medium.jpg" height="131" width="270"  alt="chambre 1">
+                            <img src="img/galerie/bedroomk7medium.jpg" height="180" width="270"  alt="chambre 1">
                             <figcaption>
                                 <h3>Chambre k7</h3>
                                 <span>Deuxième étage</span>
@@ -177,15 +177,14 @@
                 </ul></div>
                 <?php echo
         '<ul class="navChambre">
-            <li class="listeChambre"><a href="?id=k1#k1">Chambre K1</a>,
-            <li class="listeChambre"><a href="?id=k2#k2">Chambre K2</a>,
-            <li class="listeChambre"><a href="?id=k1#k1">Chambre K3</a>,
-            <li class="listeChambre"><a href="?id=k2#k2">Chambre K4</a>,
-            <li class="listeChambre"><a href="?id=k1#k1">Chambre K5</a>,
-            <li class="listeChambre"><a href="?id=k2#k2">Chambre K6</a>,
-            <li class="listeChambre"><a href="?id=k1#k1">Chambre K7</a>,
-            <li class="listeChambre"><a href="?id=k2#k2">Chambre K8</a>,
-
+            <li class="listeChambre"><a href="?id=k1#k1">Chambre K1</a> | 
+            <li class="listeChambre"><a href="?id=k2#k2">Chambre K2</a> | 
+            <li class="listeChambre"><a href="?id=k3#k3">Chambre K3</a> | 
+            <li class="listeChambre"><a href="?id=k4#k4">Chambre K4</a> | 
+            <li class="listeChambre"><a href="?id=k5#k5">Chambre K5</a> | 
+            <li class="listeChambre"><a href="?id=k6#k6">Chambre K6</a> | 
+            <li class="listeChambre"><a href="?id=k7#k7">Chambre K7</a> | 
+            <li class="listeChambre"><a href="?id=k8#k8">Chambre K8</a>|
         </ul>';
 
 //==========================================================      
@@ -210,6 +209,54 @@
              
                 { //echo'';
                   require 'k2.php';
+                  }
+//==========================================================      
+//~~~~=__________Affichage K3__________=~~~~//
+//==========================================================   
+             elseif ($_GET['id']=='k3')
+             
+                { //echo'';
+                  require 'k3.php';
+                  }
+//==========================================================      
+//~~~~=__________Affichage K4__________=~~~~//
+//==========================================================   
+             elseif ($_GET['id']=='k4')
+             
+                { //echo'';
+                  require 'k4.php';
+                  }
+//==========================================================      
+//~~~~=__________Affichage K5__________=~~~~//
+//==========================================================   
+             elseif ($_GET['id']=='k5')
+             
+                { //echo'';
+                  require 'k5.php';
+                  }
+//==========================================================      
+//~~~~=__________Affichage K6__________=~~~~//
+//==========================================================   
+             elseif ($_GET['id']=='k6')
+             
+                { //echo'';
+                  require 'k6.php';
+                  }
+//==========================================================      
+//~~~~=__________Affichage K7__________=~~~~//
+//==========================================================   
+             elseif ($_GET['id']=='k7')
+             
+                { //echo'';
+                  require 'k7.php';
+                  }
+//==========================================================      
+//~~~~=__________Affichage K8__________=~~~~//
+//==========================================================   
+             elseif ($_GET['id']=='k8')
+             
+                { //echo'';
+                  require 'k8.php';
                   }
 
 
