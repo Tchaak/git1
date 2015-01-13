@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>8Keys</title>
-    <meta name="description" content="Bed and Breakfast situé à Gesves" />
+    <meta name="description" content="Bed and Breakfast situé à Gesves en Belgique" />
     <meta name="keywords" content="Chambre,hôtes,héberger,loger,accueillir,hospitalité,recevoir,bed,breakfast,Gesves" />
     <meta name="author" content="Valérie Herrman" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -62,24 +62,24 @@
             </section>
             
 <!--ACCUEIL-->
-            <section id="section1" class="accueil">
+            <section id="section1" class="about">
                 <h1>Bonjour</h1>
                 <h2>Bienvenue chez moi !</h2>
                 <hr />
-                <p >
+
+<p >
                    Aujourd'hui, je vous reçois dans un des plus beaux villages de Wallonie, Gesves.
-                </p><img src="img/village.jpg" height="1300" width="2000" alt="Gèsves" >
+                </p><br /><img src="img/illu.png" height="92" width="167" alt="illu">
 <br />
-                <p>La bâtisse qui vous hébergera, datée de 1790 vous charmera par son authenticité.</p><img src="img/maison2.jpg" height="1300" width="2000" alt="Maison d'hôtes">
+                <p>La bâtisse qui vous hébergera, datée de 1790 vous charmera par son authenticité.</p><br /><img src="img/illu.png" height="92" width="167" alt="illu">
                 <p> Sa découverte fût pour moi un véritable coup de cœur, à tel point que j'ai décidé de quitter l’Angleterre pour vivre ici et vous accueillir à mon tour. 
                     Tout le confort actuel allié au respect des matériaux d’époque vous garantiront un accueil d’exception.</p>
                 
 
-                    <p>Quant à moi, j’espère ravir vos papilles . Mes origines anglaises ajouteront sans nul doute au dépaysement souvent recherché.</p>
-                    <img src="img/annie.jpg" height="1300" width="2000" alt="Annie Versaire">
+                    <p>Quant à moi, j’espère ravir vos papilles . Mes origines anglaises ajouteront sans nul doute au dépaysement souvent recherché.</p> 
             </section>
 <!--CHAMBRE INTRO-->
-            <section id="section2" class="chambres">
+            <section id="section2" class="about">
                 <h1>Chambres</h1>
                 <hr />
 
@@ -176,15 +176,15 @@
                     </li>
                 </ul></div>
                 <?php echo
-        '<ul class="navChambre">
-            <li class="listeChambre"><a href="?id=k1#k1">Chambre K1</a>,
-            <li class="listeChambre"><a href="?id=k2#k2">Chambre K2</a>,
-            <li class="listeChambre"><a href="?id=k1#k1">Chambre K3</a>,
-            <li class="listeChambre"><a href="?id=k2#k2">Chambre K4</a>,
-            <li class="listeChambre"><a href="?id=k1#k1">Chambre K5</a>,
-            <li class="listeChambre"><a href="?id=k2#k2">Chambre K6</a>,
-            <li class="listeChambre"><a href="?id=k1#k1">Chambre K7</a>,
-            <li class="listeChambre"><a href="?id=k2#k2">Chambre K8</a>,
+        '<ul>
+            <li><a href="?id=k1#k1">Chambre K1</a>,
+            <li><a href="?id=k2#k2">Chambre K2</a>,
+            <li><a href="?id=k1#k1">Chambre K3</a>,
+            <li><a href="?id=k2#k2">Chambre K4</a>,
+            <li><a href="?id=k1#k1">Chambre K5</a>,
+            <li><a href="?id=k2#k2">Chambre K6</a>,
+            <li><a href="?id=k1#k1">Chambre K7</a>,
+            <li><a href="?id=k2#k2">Chambre K8</a>,
 
         </ul>';
 
@@ -362,17 +362,10 @@
 
 <?php echo
         '<p><a href="?id=patrimoine#patrimoine">Partez à la découverte du patrimoine local</a></p>';
-        //==========================================================      
-//~~~~=__________Affichage quand pas id__________=~~~~//
-//==========================================================   
-             if (!isset($_GET['id']))
-             
-                  { echo'  ';
-                  }
 //==========================================================
 //~~~~=__________Affichage patrimoine__________=~~~~//
 //==========================================================
-elseif ($_GET['id']=='patrimoine')
+             if ($_GET['id']=='patrimoine')
              
                 { //echo'';
                   require 'patrimoine.php';
@@ -383,17 +376,10 @@ elseif ($_GET['id']=='patrimoine')
                 <p>Découvrez un des sites préhistoriques majeurs d'Europe, là où Neandertal et Cro-magnon auraient pu se croiser, là où les principales œuvres d'art préhistorique belges ont été découvertes... Ou préférez-vous vous détendre avec quelques visites ?</p>
 <?php echo
         '<p><a href="?id=loisirs#loisirs">Découvrez notre région</a></p>';
-                //==========================================================      
-//~~~~=__________Affichage quand pas id__________=~~~~//
-//==========================================================   
-             if (!isset($_GET['id']))
-             
-                  { echo'  ';
-                  }
 //==========================================================
 //~~~~=__________Affichage Loisirs__________=~~~~//
 //==========================================================
-elseif ($_GET['id']=='loisirs')
+             if ($_GET['id']=='loisirs')
              
                 { //echo'';
                   require 'loisirs.php';
@@ -405,17 +391,10 @@ elseif ($_GET['id']=='loisirs')
 
 <?php echo
         '<p><a href="?id=deguster#deguster">Dégustez des produits de qualités</a></p>';
-//==========================================================      
-//~~~~=__________Affichage quand pas id__________=~~~~//
-//==========================================================   
-             if (!isset($_GET['id']))
-             
-                  { echo'  ';
-                  }
 //==========================================================
 //~~~~=__________Affichage Gastronomie__________=~~~~//
 //==========================================================
-elseif ($_GET['id']=='deguster')
+             if ($_GET['id']=='deguster')
              
                 { //echo'';
                   require 'gastronomie.php';
@@ -423,9 +402,6 @@ elseif ($_GET['id']=='deguster')
 
 
             </section>
-
-
-
 <!--CONTACT-->
             <section id="section7" class="portfolio">
             <h1>Contact</h1>
@@ -503,6 +479,7 @@ elseif ($_GET['id']=='deguster')
     
     <!-- Gestion générale -->
     <script src="js/custom.js"></script>
-
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.parallax-1.1.js"></script>
 </body>
 </html>
