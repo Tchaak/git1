@@ -48,3 +48,4 @@ temp/scena
 temp/styleTiles
 temp/wireframe
 temp/img/*.jpg
+.sass-cache
