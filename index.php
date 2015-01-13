@@ -66,7 +66,44 @@
                 <h1>Bonjour</h1>
                 <h2>Bienvenue chez moi !</h2>
                 <hr />
-                <p >
+
+    <div id="slide1">
+    
+        <div class="slide_inside">                  
+            
+<p >Aujourd'hui, je vous reçois dans un des plus beaux villages de Wallonie, Gesves.</p>
+            
+        </div> <!--.slide_inside-->  
+                        
+    </div> <!--#slide1-->
+    
+    
+    <div id="slide2">
+        
+        <div class="slide_inside">
+<p>La bâtisse qui vous hébergera, datée de 1790 vous charmera par son authenticité.</p>
+<p> Sa découverte fût pour moi un véritable coup de cœur, à tel point que j'ai décidé de quitter l’Angleterre pour vivre ici et vous accueillir à mon tour. Tout le confort actuel allié au respect des matériaux d’époque vous garantiront un accueil d’exception.</p>
+        </div> <!--.slide_inside-->         
+        
+    </div> <!--#slide2-->
+    <div id="slide3">
+    
+        <div class="slide_inside">
+<p>Quant à moi, j’espère ravir vos papilles . Mes origines anglaises ajouteront sans nul doute au dépaysement souvent recherché.</p></div>
+<!--.slide_inside-->     
+        
+    </div> <!--#slide3-->
+
+
+
+
+
+
+
+
+
+
+<!--                 <p >
                    Aujourd'hui, je vous reçois dans un des plus beaux villages de Wallonie, Gesves.
                 </p><br /><img src="img/illu.png" height="92" width="167" alt="illu">
 <br />
@@ -75,7 +112,7 @@
                     Tout le confort actuel allié au respect des matériaux d’époque vous garantiront un accueil d’exception.</p>
                 
 
-                    <p>Quant à moi, j’espère ravir vos papilles . Mes origines anglaises ajouteront sans nul doute au dépaysement souvent recherché.</p>
+                    <p>Quant à moi, j’espère ravir vos papilles . Mes origines anglaises ajouteront sans nul doute au dépaysement souvent recherché.</p> -->
             </section>
 <!--CHAMBRE INTRO-->
             <section id="section2" class="about">
@@ -478,6 +515,7 @@
     
     <!-- Gestion générale -->
     <script src="js/custom.js"></script>
-
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.parallax-1.1.js"></script>
 </body>
 </html>
