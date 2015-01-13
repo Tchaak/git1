@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>8Keys</title>
-    <meta name="description" content="Bed and Breakfast situé à Gesves" />
+    <meta name="description" content="Bed and Breakfast situé à Gesves en Belgique" />
     <meta name="keywords" content="Chambre,hôtes,héberger,loger,accueillir,hospitalité,recevoir,bed,breakfast,Gesves" />
     <meta name="author" content="Valérie Herrman" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -350,68 +350,56 @@
             </section>
 
 <!--ACTIVITE-->
-            <section id="section6" class="portfolio">
+            <section id="section6" class="about">
             <h1>Activités</h1>
                 <h2>Le pays du Condroz et de la Famenne, terroir privilégié </h2>
                 <hr />
                 <p>On cultive l'art de vivre au naturel. Ici, on prend le temps. Le temps de découvrir...</p><br />
                 <p class="quote">N’hésitez pas à me faire part de vos envies de découverte !</p>
                 <h3>Circuits</h3>
-                <p>Des vélos sont à votre dispositions, n’hésitez pas à m'en parler.Faites votre  circuit à cheval, Gesves est en effet la capitale belge du cheval.</p>
-                <p><a href="#">Partez à la découverte du patrimoine local (+)</a></p>
+                <p>Des vélos sont à votre dispositions, n’hésitez pas à m'en parler. Faites votre  circuit à cheval, Gesves est en effet la capitale belge du cheval.</p>
 
-                <ul><li>Balade des Longues Haies (Le Roeulx) (+)Ce circuit Balisé vous promet une agréable découverte des alentours de Mignault. Visite du Village, de la campagne, des fermes environnantes ou encore des bois, la diversité du tracé promet une agréable balade. Ce circuit vous est proposé par : www.leroeulxtourisme.be 
-                Télécharger le GPX 
-                13.3Km (picto velo – cheval – marcheur)</li>
-                
-                <li>Des champs de guerre aux chemins de paix – Circuit du Pays de Bastogne (+)
-                Ce circuit vous permettra de découvrir, en voiture ou à moto, des régions ardennaises connues pour leur histoire mais qui méritent également qu’on s’y balade pour découvrir leurs paysages verdoyants et leurs villages paisibles.
-                Télécharger le GPX
-                84,5Km (picto moto – voiture)</li>
-                
-                <li>Au Pays des Bocages (Herve) (+)
-                Le pays de Herve… voici un pays qui vous met l’eau à la bouche ! Des vallées et des bocages verdoyants, des produits de terroir alléchants et variés, un riche patrimoine historique, des villages parmi les plus beaux de Wallonie…
-                Télécharger le GPX
-                33,3Km (picto vélo)</li>
-                </ul>
+<?php echo
+        '<p><a href="?id=patrimoine#patrimoine">Partez à la découverte du patrimoine local</a></p>';
+//==========================================================
+//~~~~=__________Affichage patrimoine__________=~~~~//
+//==========================================================
+             if ($_GET['id']=='patrimoine')
+             
+                { //echo'';
+                  require 'patrimoine.php';
+                  } ?>
+
 
                 <h3>Loisirs</h3>
-                <p>Découvrez un des sites préhistoriques majeurs d'Europe, là où Neandertal et Cro-magnon auraient pu se croiser, là où les principales œuvres d'art préhistorique belges ont été découvertes... 
-Ou préférez-vous vous détendre avec quelques visites ?</p>
-                <p><a href="#">Découvrez notre région  (+)</a></p>
-                
-                <ul>
+                <p>Découvrez un des sites préhistoriques majeurs d'Europe, là où Neandertal et Cro-magnon auraient pu se croiser, là où les principales œuvres d'art préhistorique belges ont été découvertes... Ou préférez-vous vous détendre avec quelques visites ?</p>
+<?php echo
+        '<p><a href="?id=loisirs#loisirs">Découvrez notre région</a></p>';
+//==========================================================
+//~~~~=__________Affichage Loisirs__________=~~~~//
+//==========================================================
+             if ($_GET['id']=='loisirs')
+             
+                { //echo'';
+                  require 'loisirs.php';
+                  } ?>
 
-                <li>Goyet la Préhistorique (+)
-                Le plaisir d’une longue promenade souterraine entre stalactites et draperies, dans un ensemble de 5 grottes remarquables.
-                http://www.grottesgoyet.be</li>
-                
-                <li>Château de Modave (+)
-                difié au moyen age, le château offre une vue exceptionnelle sur la nature environnante constituant une réserve naturelle de 450 hectares. Plus de 25 salles sont disponibles à la visite.
-                http://www.modave-castle.be</li>
-
-                <li>Parc de récréation Mont Mosan (+)
-                L'endroit idéal pour se détendre en laissant les enfants s'épanouir en toute sécurité grâce à une aire de jeux parmi les plus importantes de la région et enrichie de nouveautés chaque année. Une belle opportunité aussi d'approcher le monde animal avec les spectacles d'otaries, phoques et perroquets.
-                http://www.montmosan.be</li>
-            </ul>
 
                 <h3>Gastronomie et terroir</h3>
                 <p>Bien qu'offrant la possibilité à mes hôtes de découvrir des recettes uniques composées de produits du terroir, il vous est aussi possible de déguster les mets de notre région à d'autres tables. Voici une sélection d'environnement champêtre où règne l'esprit de convivialité, plusieurs restaurants à la ferme et restaurants de la région vous attendent !</p>
-                <p><a href="#">Dégustez des produits de qualités  (+)</a></p>
-                
-                <ul>
 
-                <li>Atelier de Bossimé  (+)
-                C’est à Loyers au cœur de la ferme familiale, au lieu-dit « Bossimé » que Ludovic Vanackere, jeune chef à la notoriété croissante, a décidé d’ouvrir sa Ferme Gourmande® : « L’Atelier de Bossimé ».</li>
+<?php echo
+        '<p><a href="?id=deguster#deguster">Dégustez des produits de qualités</a></p>';
+//==========================================================
+//~~~~=__________Affichage Gastronomie__________=~~~~//
+//==========================================================
+             if ($_GET['id']=='deguster')
+             
+                { //echo'';
+                  require 'gastronomie.php';
+                  } ?>
 
-                <li>La pichelotte(+)
-                Dans la cuisine ouverte, père et fils œuvrent pour vous concocter une savoureuse cuisine française qui fait la part belle aux produits du terroir. Les suggestions changent selon le marché et des grillades au feu de bois viennent compléter une carte bien élaborée.
-                http://www.lapichelotte.be</li>
 
-                <li>L'atelier des saveurs, table d'hôtes (+)
-                La table est située dans un endroit calme en pleine campagne. Intimiste et chaleureuse, la cuisine est une combinaison de saveurs et de créativité.</li>
-
-            </ul>
             </section>
 <!--CONTACT-->
             <section id="section7" class="portfolio">

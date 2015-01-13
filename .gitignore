@@ -41,3 +41,10 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Dossier temp
+temp/moodboard
+temp/scena
+temp/styleTiles
+temp/wireframe
+temp/img/*.jpg
