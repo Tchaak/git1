@@ -239,7 +239,13 @@ display: inline-block;
 }
 
 .ancre {
-    padding-top: 350px;
+    ul {
+        margin: 0;
+    }
+    li {display: inline-block;
+        width: 45%;
+        //padding-left: 5px;
+        }
 }
 /******************************************************
 
@@ -448,10 +454,16 @@ display: inline-block;
     }
 
 .chambres {
- 
-    li,img{
-margin-left: -40px;
+
+.ancre {
+    ul {
+        margin: 0;
     }
+    li {
+        display: block;
+        width: 100%;
+        }
+}
 
 }
 
@@ -468,10 +480,16 @@ margin-left: -40px;
         padding: 20px 5px 20px 5px;
         margin-top: 50px;
         width: 100%;}
+            .bgtransparent {
+       
+        padding: 20px 5px 20px 5px;
+        margin-top: 50px;
+        width: 100%;
+        }
         .borderleft {
             border-left: 3px solid red;
             margin-bottom: 20px;
-            padding-left: 15px;
+            padding-left: 5px;
         }
             .borderright {
             border-right: 3px solid red;

@@ -1627,8 +1627,12 @@ header.headermobile button {
   display: inline-block;
 }
 
-.ancre {
-  padding-top: 350px;
+.ancre ul {
+  margin: 0;
+}
+.ancre li {
+  display: inline-block;
+  width: 45%;
 }
 
 /******************************************************
@@ -1793,8 +1797,12 @@ header.headermobile button {
     background-image: url("../img/scroll-small.png");
   }
 
-  .chambres li, .chambres img {
-    margin-left: -40px;
+  .chambres .ancre ul {
+    margin: 0;
+  }
+  .chambres .ancre li {
+    display: block;
+    width: 100%;
   }
 
   .services ul {
@@ -1810,10 +1818,15 @@ header.headermobile button {
     margin-top: 50px;
     width: 100%;
   }
+  .services .bgtransparent {
+    padding: 20px 5px 20px 5px;
+    margin-top: 50px;
+    width: 100%;
+  }
   .services .borderleft {
     border-left: 3px solid red;
     margin-bottom: 20px;
-    padding-left: 15px;
+    padding-left: 5px;
   }
   .services .borderright {
     border-right: 3px solid red;
