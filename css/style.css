@@ -1089,8 +1089,8 @@ header.headermobile button {
 
 #team li figcaption.image {
   display: inline-block;
-  width: 220px;
-  height: 180px;
+  width: 80%;
+  height: auto;
   text-align: center;
   display: block;
   float: left;
@@ -1099,7 +1099,8 @@ header.headermobile button {
 #team li figcaption.image img {
   margin: 0px;
   padding: 0px;
-  height: 180px;
+  width: 60%;
+  height: auto;
 }
 
 #team li figcaption.contactme {
@@ -1337,7 +1338,7 @@ header.headermobile button {
   }
 
   #main section, #main section:first-child {
-    padding: 80px 20px 20px 20px;
+    padding: 80px 5px 20px 5px;
   }
 
   #main section {
@@ -1688,14 +1689,6 @@ header.headermobile button {
     $INDEX_ - RESERVATION
     
 ******************************************************/
-.reservation form {
-  width: 50%;
-}
-.reservation .leftreservation {
-  float: left;
-  width: 50%;
-}
-
 /******************************************************
 
     $INDEX8 - PORTFOLIO
@@ -1720,16 +1713,12 @@ header.headermobile button {
     $INDEX9 - LISTE
     
 ******************************************************/
-#team li {
-  background: #E46C51;
-}
-
 #team li figcaption.contactme {
-  background: #222222;
+  background: #898585;
 }
 
 #team li figcaption.member {
-  background: #222222;
+  background: #898585;
 }
 
 #team li figcaption.contactme span:hover,
@@ -1802,5 +1791,32 @@ header.headermobile button {
 
   .scroll:hover {
     background-image: url("../img/scroll-small.png");
+  }
+
+  .chambres li, .chambres img {
+    margin-left: -40px;
+  }
+
+  .services ul {
+    list-style-type: none;
+    font-size: 1.3rem;
+  }
+  .services li {
+    padding-bottom: 15px;
+  }
+  .services .bgtransparentright {
+    background-color: rgba(56, 46, 46, 0.75);
+    padding: 20px 5px 20px 5px;
+    margin-top: 50px;
+    width: 100%;
+  }
+  .services .borderleft {
+    border-left: 3px solid red;
+    margin-bottom: 20px;
+    padding-left: 15px;
+  }
+  .services .borderright {
+    border-right: 3px solid red;
+    margin-bottom: 20px;
   }
 }

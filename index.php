@@ -302,12 +302,12 @@
             <h1>Réservation</h1>
                 <hr />
 
-                <p>Pour confirmer une réservation, il est nécessaire de verser 50% du montant du séjour par carte ou virement bancaire.</p>
-            <div class="leftreservation">
+            <div class="col50 left">
+            <p class="quote">Je vous confirme votre réservation dès que 50% du montant du séjour est versé.</p>
                 <h3>Annulation ou modification du séjour</h3>
-                <p>En cas d’annulation avant le 15ème jour précédant la date prévue de la réservation, les arrhes sont remboursées. Pour les annulations et modifications dans les 8 jours précédant la date de la réservation, le montant total du séjour sera facturé.Toute annulation ne sera valable qu’après validation par un e-mail envoyé.</p>
+                <p>En cas d’annulation avant le 15ème jour précédant la date prévue de la réservation, les arrhes sont remboursées. </p><p>Pour les annulations et modifications dans les 8 jours précédant la date de la réservation, le montant total du séjour sera facturé.</p><p>Toute annulation ne sera valable qu’après validation par un e-mail envoyé.</p>
             </div>
-            <div class="right">
+            <div class="col50 right">
                     <h3>Faites votre réservation</h3>
                     <br />
                     <form id="contact-form" action="/" method="post">
@@ -335,30 +335,7 @@
                                         <input placeholder="numéro de téléphone" type="tel" tabindex="4">
                                 </label>
                         </div>
-                        <div>
-                                <label>
-                                        <span>Rue</span>
-                                        <input placeholder="votre adresse" type="text" tabindex="5">
-                                </label>
-                        </div>
-                        <div>
-                                <label>
-                                        <span>N°</span>
-                                        <input placeholder="N° d'habitation" type="text" tabindex="6">
-                                </label>
-            </div>
-                        <div>
-                                <label>
-                                        <span>CP</span>
-                                        <input placeholder="votre code postal" type="text" tabindex="7">
-                                </label>
-                        </div>
-                        <div>
-                                <label>
-                                        <span>Ville</span>
-                                        <input placeholder="votre ville" type="text" tabindex="8">
-                                </label>
-                        </div>
+
                         <div>
                                 <label>
                                         <span>Commentaire</span>
@@ -367,7 +344,7 @@
                         </div>
                         <div>
                                 <label>
-                                        <span>Choisissez votre chambre</span>
+                                        <span>Choisissez votre chambre</span></label>
                                         <select name="chambre" tabindex="10">
                                         <option value="k1">Chambre k1</option>
                                         <option value="k2">Chambre k2</option>
@@ -378,7 +355,7 @@
                                         <option value="k7">Chambre k7</option>
                                         <option value="k8">Chambre k8</option>
                                         </select>
-                                </label>
+                                
                         </div>
                         <div>
                                 <label>
@@ -407,11 +384,46 @@
                 <hr />
                 <p>On cultive l'art de vivre au naturel. Ici, on prend le temps. Le temps de découvrir...</p><br />
                 <p class="quote">N’hésitez pas à me faire part de vos envies de découverte !</p>
-                <h3>Circuits</h3>
-                <p>Des vélos sont à votre dispositions, n’hésitez pas à m'en parler. Faites votre  circuit à cheval, Gesves est en effet la capitale belge du cheval.</p>
+<ul id="team">
+                
+                    <li>
+                        <figure>
+                            <figcaption class="image">
+                                <img src="img/circuit.png" height="232" width="231" alt="circuit">
+                            </figcaption>
+                           
+                            <figcaption class="member">
+                            <a href="?id=patrimoine#patrimoine">Partez à la découverte du patrimoine</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <figcaption class="image">
+                                <img src="img/loisirs.png" height="232" width="231" alt="loisirs">
+                            </figcaption>
+                           
+                            <figcaption class="member">
+                            <a href="?id=loisirs#loisirs">Découvrez la région</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <figcaption class="image">
+                                <img src="img/gastronomie.png" height="232" width="231" alt="Gastronomie">
+                            </figcaption>
+                           
+                            <figcaption class="member">
+                            <a href="?id=deguster#deguster">Dégustez des produits de qualités</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    
+                </ul>
 
-<?php echo
-        '<p><a href="?id=patrimoine#patrimoine">Partez à la découverte du patrimoine local</a></p>';
+<?php 
+        ;
         //==========================================================      
 //~~~~=__________Affichage quand pas id__________=~~~~//
 //==========================================================   
@@ -428,11 +440,7 @@ elseif ($_GET['id']=='patrimoine')
                   require 'patrimoine.php';
                   } ?>
 
-
-                <h3>Loisirs</h3>
-                <p>Découvrez un des sites préhistoriques majeurs d'Europe, là où Neandertal et Cro-magnon auraient pu se croiser, là où les principales œuvres d'art préhistorique belges ont été découvertes... Ou préférez-vous vous détendre avec quelques visites ?</p>
-<?php echo
-        '<p><a href="?id=loisirs#loisirs">Découvrez notre région</a></p>';
+<?php ;
                 //==========================================================      
 //~~~~=__________Affichage quand pas id__________=~~~~//
 //==========================================================   
@@ -450,11 +458,9 @@ elseif ($_GET['id']=='loisirs')
                   } ?>
 
 
-                <h3>Gastronomie et terroir</h3>
-                <p>Bien qu'offrant la possibilité à mes hôtes de découvrir des recettes uniques composées de produits du terroir, il vous est aussi possible de déguster les mets de notre région à d'autres tables. Voici une sélection d'environnement champêtre où règne l'esprit de convivialité, plusieurs restaurants à la ferme et restaurants de la région vous attendent !</p>
 
-<?php echo
-        '<p><a href="?id=deguster#deguster">Dégustez des produits de qualités</a></p>';
+<?php
+       ;
 //==========================================================      
 //~~~~=__________Affichage quand pas id__________=~~~~//
 //==========================================================   
@@ -473,6 +479,7 @@ elseif ($_GET['id']=='deguster')
 
 
             </section>
+
 
 
 

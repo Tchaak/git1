@@ -295,13 +295,7 @@ display: inline-block;
 ******************************************************/ 
 .reservation {
 
-    form {
-        width: 50%;
-    }
-    .leftreservation {
-        float: left;
-        width: 50%;
-    }
+
 }
 
 
@@ -338,16 +332,16 @@ display: inline-block;
 
 
 #team li{
-    background: #E46C51;
+   // background: #E46C51;
 }
 
 #team li figcaption.contactme{
-    background: #222222;
+    background: #898585;
 }
 
 
 #team li figcaption.member{
-    background: #222222;
+    background: #898585;
 }
 
 #team li figcaption.contactme span:hover,
@@ -452,6 +446,39 @@ display: inline-block;
     .scroll:hover {
         background-image: url('../img/scroll-small.png');
     }
+
+.chambres {
+ 
+    li,img{
+margin-left: -40px;
+    }
+
+}
+
+.services {
+
+    ul {
+            list-style-type: none;font-size: 1.3rem;
+        }
+    li {
+            padding-bottom: 15px;
+        }
+        .bgtransparentright {
+        background-color:hsla(0, 9%, 20%,0.75);
+        padding: 20px 5px 20px 5px;
+        margin-top: 50px;
+        width: 100%;}
+        .borderleft {
+            border-left: 3px solid red;
+            margin-bottom: 20px;
+            padding-left: 15px;
+        }
+            .borderright {
+            border-right: 3px solid red;
+            margin-bottom: 20px;
+
+        }
+}
 
 
 }
