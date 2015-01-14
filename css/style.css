@@ -1417,6 +1417,8 @@ header.headermobile button {
         $INDEX7 - MAIN CONTENT
         $INDEX_ - ACCUEIL
         $INDEX_ - CHAMBRES
+        $INDEX_ - SERVICES
+        $INDEX_ - RESERVATION
         $INDEX8 - PORTFOLIO
         $INDEX9 - LISTE
         $INDEX10 - CONTACT
@@ -1626,6 +1628,72 @@ header.headermobile button {
 
 .ancre {
   padding-top: 350px;
+}
+
+/******************************************************
+
+    $INDEX_ - SERVICES
+    
+******************************************************/
+.services {
+  background: url("../img/tablette.jpg") no-repeat center fixed;
+  -webkit-background-size: cover;
+  /* pour Chrome et Safari */
+  -moz-background-size: cover;
+  /* pour Firefox */
+  -o-background-size: cover;
+  /* pour Opera */
+  background-size: cover;
+  /* version standardisée */
+  width: 100%;
+  height: auto;
+  color: #eeeeee;
+}
+.services h1, .services h2 {
+  color: #eeeeee;
+}
+.services .bgtransparent {
+  background-color: rgba(56, 46, 46, 0.75);
+  padding: 20px 20px 20px 80px;
+  margin-top: 50px;
+  width: 50%;
+}
+.services ul {
+  list-style-type: none;
+  font-size: 1.3rem;
+}
+.services li {
+  padding-bottom: 15px;
+}
+.services .bgtransparentright {
+  float: right;
+  background-color: rgba(56, 46, 46, 0.75);
+  padding: 20px 20px 20px 80px;
+  margin-top: 50px;
+  width: 50%;
+}
+.services .borderleft {
+  border-left: 3px solid red;
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+.services .borderright {
+  border-right: 3px solid red;
+  margin-bottom: 20px;
+  padding-right: 15px;
+}
+
+/******************************************************
+
+    $INDEX_ - RESERVATION
+    
+******************************************************/
+.reservation form {
+  width: 50%;
+}
+.reservation .leftreservation {
+  float: left;
+  width: 50%;
 }
 
 /******************************************************

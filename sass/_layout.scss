@@ -10,6 +10,8 @@
         $INDEX7 - MAIN CONTENT
         $INDEX_ - ACCUEIL
         $INDEX_ - CHAMBRES
+        $INDEX_ - SERVICES
+        $INDEX_ - RESERVATION
         $INDEX8 - PORTFOLIO
         $INDEX9 - LISTE
         $INDEX10 - CONTACT
@@ -239,6 +241,70 @@ display: inline-block;
 .ancre {
     padding-top: 350px;
 }
+/******************************************************
+
+    $INDEX_ - SERVICES
+    
+******************************************************/ 
+.services {
+  background: url('../img/tablette.jpg') no-repeat center fixed; 
+  -webkit-background-size: cover; /* pour Chrome et Safari */
+  -moz-background-size: cover; /* pour Firefox */
+  -o-background-size: cover; /* pour Opera */
+  background-size: cover; /* version standardisée */
+  width: 100%;
+  height: auto;
+  color: #eeeeee;
+    h1,h2 {
+        color: #eeeeee;
+        }
+    .bgtransparent {
+        background-color:hsla(0, 9%, 20%,0.75);
+        padding: 20px 20px 20px 80px;
+        margin-top: 50px;
+        width: 50%;
+        }
+    ul {
+            list-style-type: none;font-size: 1.3rem;
+        }
+    li {
+            padding-bottom: 15px;
+        }
+        .bgtransparentright {
+        float: right;
+        background-color:hsla(0, 9%, 20%,0.75);
+        padding: 20px 20px 20px 80px;
+        margin-top: 50px;
+        width: 50%;}
+        .borderleft {
+            border-left: 3px solid red;
+            margin-bottom: 20px;
+            padding-left: 15px;
+        }
+            .borderright {
+            border-right: 3px solid red;
+            margin-bottom: 20px;
+            padding-right: 15px;
+        }
+}
+
+/******************************************************
+
+    $INDEX_ - RESERVATION
+    
+******************************************************/ 
+.reservation {
+
+    form {
+        width: 50%;
+    }
+    .leftreservation {
+        float: left;
+        width: 50%;
+    }
+}
+
+
 /******************************************************
 
     $INDEX8 - PORTFOLIO

@@ -267,48 +267,51 @@
 
             </section>
 <!--SERVICES-->
-            <section id="section3" class="about">
+            <section id="section3" class="services">
                 <h1>Services</h1>
 <hr />
-                    <p>Toutes les chambres sont équipées des mêmes services :</p>
-                    <ul>
+                    <div class="bgtransparent">
+                    <ul >
                     <li>Une tablette sera à votre disposition durant votre séjour, elle vous permet :
-                     <ul><li>de choisir votre petit déjeuner à la carte et de préciser où vous désirez le prendre ainsi que l'heure (en chambre, sur la terrasse ou encore en format pique-nique).</li>
-                            <li>Pour les aventuriers, les différentes activités de la région sont détaillées ainsi que la possibilité de télécharger les circuits GPS.</li>
+                     <ul><li class="borderleft">De choisir votre petit déjeuner à la carte et de préciser où vous désirez le prendre ainsi que l'heure (en chambre, sur la terrasse ou encore en format pique-nique).</li>
+                            <li class="borderleft">Pour les aventuriers, les différentes activités de la région sont détaillées ainsi que la possibilité de télécharger les circuits GPS.</li>
                         </ul>
-                    </li>
-                    <li>Système de sonorisation sans fil, diffusez votre musique personnelle partout dans la chambre.</li>
-                    <li>Minibar "Découverte du terroir". Dégustez les produits de saison que je vous ai sélectionné et relaxez-vous.</li>
-                    <li>Serviettes de bain et linge pour le lit</li>
-                    <li>Sèche-cheveux</li>
-                    <li>Des vélos sont disponibles si vous m'en parlez la veille de votre balade</li>
+                    </li></ul></div>
+                    <div class="bgtransparentright">
+                    <ul><h2>Toutes les chambres sont équipées des mêmes services :</h2>
+                    <li class="borderright">Système de sonorisation sans fil, diffusez votre musique personnelle partout dans la chambre.</li>
+                    <li  class="borderright">Minibar "Découverte du terroir". Dégustez les produits de saison que je vous ai sélectionné et relaxez-vous.</li>
+                    <li  class="borderright">Serviettes de bain et linge pour le lit</li>
+                    <li  class="borderright">Sèche-cheveux</li>
+                    <li  class="borderright">Des vélos sont disponibles si vous m'en parlez la veille de votre balade</li>
                     </ul>
-<img src="img/illu.png" height="92" width="167" alt="illu"><br />
-
-                    <p>Nos chambres offrent un confort et une attention semblables, seules les chambres du rez-de-chaussée se démarquent par leur accessibilité.</p>
+                    <p>Nos chambres offrent un confort et une attention semblables, seules les chambres du rez-de-chaussée se démarquent par leur accessibilité.</p></div>
 <p class="quote">L'utilisation de la tablette n'est pas obligatoire, je reste quoi qu'il en soit à votre disposition.</p>
 
             </section>
 <!--TARIFS-->
-            <section id="section4" class="about">
+            <section id="section4" class="tarifs">
             <h1>Tarifs</h1>
                 <hr />
-                <p>Vous pouvez séjourner dans l’une des 8 chambres pour 100 euro, par personne et par nuit. Le petit déjeuner à la carte est compris.</p>
+                <p>Vous pouvez séjourner dans l’une des 8 chambres pour 100 euro, par personne et par nuit.<br />Le petit déjeuner à la carte est compris.</p>
 
 
             </section>
 <!--RESERVATION FORMULAIRE-->
-            <section id="section5" class="portfolio">
+            <section id="section5" class="reservation">
             <h1>Réservation</h1>
                 <hr />
 
                 <p>Pour confirmer une réservation, il est nécessaire de verser 50% du montant du séjour par carte ou virement bancaire.</p>
+            <div class="leftreservation">
                 <h3>Annulation ou modification du séjour</h3>
                 <p>En cas d’annulation avant le 15ème jour précédant la date prévue de la réservation, les arrhes sont remboursées. Pour les annulations et modifications dans les 8 jours précédant la date de la réservation, le montant total du séjour sera facturé.Toute annulation ne sera valable qu’après validation par un e-mail envoyé.</p>
+            </div>
+            <div class="right">
                     <h3>Faites votre réservation</h3>
                     <br />
                     <form id="contact-form" action="/" method="post">
-                        <div>
+                    <div>
                                 <label>
                                         <span>Nom (required)</span>
                                         <input placeholder="votre nom" type="text" tabindex="1" required>
@@ -343,7 +346,7 @@
                                         <span>N°</span>
                                         <input placeholder="N° d'habitation" type="text" tabindex="6">
                                 </label>
-                        </div>
+            </div>
                         <div>
                                 <label>
                                         <span>CP</span>
@@ -389,11 +392,11 @@
                                         <input type="date" tabindex="12">
                                 </label>
                         </div>
-                        <div>
-                                <button name="submit" type="submit" id="contact-submit">Send Email</button>
-                        </div>
-                    </form>
 
+                                <button name="submit" type="submit" id="contact-submit">Send Email</button>
+               
+                    </form>
+                    </div>
                 
             </section>
 
